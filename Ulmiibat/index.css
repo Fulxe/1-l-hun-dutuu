@@ -1,0 +1,278 @@
+body {
+  background: linear-gradient(white 1%, white);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    " neg hyr "
+    " grv hyr ";
+}
+.neg {
+  grid-area: neg;
+}
+.hyr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: hyr;
+}
+.grv {
+  font-size: 50px;
+  grid-area: grv;
+}
+.skills {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img img"
+    "one logos";
+}
+.img {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  grid-area: img;
+}
+.logos {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  grid-area: logos;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 3px 8px 7px rgba(44, 15, 15, 0.71);
+}
+.paragraph {
+  height: 300px;
+  width: 100vw;
+  grid-area: paragraph;
+}
+.projects {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "ajiluud ajiluud ajiluud"
+    "marvel battery cat"
+    "pet side bar";
+}
+.ajiluud {
+  grid-area: ajiluud;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+.marvel {
+  grid-area: marvel;
+  background-image: url("Screen Shot 2022-08-17 at 15.44.59.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  
+}
+.battery {
+  grid-area: battery;
+  background-image: url("Screen Shot 2022-08-18 at 12.09.03.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+.cat {
+  grid-area: cat;
+  background-image: url("Screen Shot 2022-08-18 at 12.10.04.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+.pet {
+  grid-area: pet;
+  background-image: url("Screen Shot 2022-08-18 at 12.09.23.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+.side {
+  grid-area: side;
+  background-image: url("Screen Shot 2022-08-17 at 15.45.54.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+.bar {
+  grid-area: bar;
+  background-image: url("Screen Shot 2022-08-18 at 12.11.01.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+.footer {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.dark-mode {
+  background: linear-gradient(black 1%, brown);
+}
+.items {
+  width: 80vw;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  width: 26vw;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.empty {
+  width: 26vw;
+  height: 120px;
+}
+.tugsgul {
+  width: 26vw;
+  height: 120px;
+  font-style: oblique;
+  font-size: 50px;
+}
+.facebook {
+  width: 50px;
+  height: 50px;
+}
+.insta {
+  width: 50px;
+  height: 40px;
+}
+.social {
+  font-weight: bold;
+  font-size: 30px;
+}
+button {
+  background-color: black;
+}
+.one {
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
+  background-color: red;
+  box-shadow: 5px 6px 81px 72px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 5px 6px 81px 72px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 5px 6px 81px 72px rgba(0, 0, 0, 0.79);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: one;
+}
+.two {
+  width: 530px;
+  height: 530px;
+  border-radius: 530px;
+  border: 1px solid black;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three {
+  width: 510px;
+  height: 510px;
+  border-radius: 510px;
+  background-color:red;
+  box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  -webkit-box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  -moz-box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 1.5s linear infinite;
+  z-index: 1;
+}
+.line {
+  position: absolute;
+}
+.negdh {
+  height: 510px;
+  width: 70px;
+  background-color: #fff;
+}
+.hoyrdh {
+  height: 70px;
+  width: 510px;
+  background-color: #fff;
+}
+.grvdh {
+  height: 510px;
+  width: 70px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.drvdh {
+  height: 510px;
+  width: 70px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.four {
+  width: 430px;
+  height: 430px;
+  border-radius: 430px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.five {
+  width: 310px;
+  height: 310px;
+  border-radius: 310px;
+  background-color: red;
+  box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  -webkit-box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  -moz-box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.six {
+  width: 210px;
+  height: 210px;
+  border-radius: 210px;
+  background-color: black;
+  box-shadow: -1px 2px 30px 13px rgba(148, 254, 254, 0.92) inset;
+  -webkit-box-shadow: -1px 2px 30px 13px rgba(148, 254, 254, 0.92) inset;
+  -moz-box-shadow: -1px 2px 30px 13px rgba(148, 254, 254, 0.92) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seven {
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+  background-color: red;
+  box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  -webkit-box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+  -moz-box-shadow: 1px 1px 22px 13px rgba(148, 254, 254, 0.92) inset;
+}
