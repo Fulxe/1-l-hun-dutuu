@@ -1,0 +1,351 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "main1 main2"
+    "main3 main2";
+  background: linear-gradient(lightblue, blue 91%);
+}
+.main > div {
+  display: flex;
+}
+.main1 {
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: main1;
+}
+.main1 > img {
+  border-radius: 10%;
+  box-shadow: 1px 1px 5px black;
+}
+.html {
+  animation: html 4s linear infinite;
+}
+.html:hover {
+  box-shadow: 3px 3px 9px black;
+  transition: 500ms;
+}
+.css {
+  animation: css 4s linear infinite;
+}
+.css:hover{
+  box-shadow: 3px 3px 9px black;
+  transition: 500ms;
+}
+.jv {
+  animation: jv 4s linear infinite;
+}
+.jv:hover {
+  box-shadow: 3px 3px 9px black;
+  transition: 500ms;
+}
+.main2 {
+  grid-area: main2;
+  justify-content: center;
+}
+.main3 {
+  grid-area: main3;
+  display: flex;
+  flex-direction: column;
+}
+.text1 {
+  animation: java 4s linear infinite;
+  color: white;
+}
+.text1:hover {
+  text-shadow: 0px 0px 5px 5px grey;
+  transition: 600ms;
+}
+.image {
+  box-shadow: 5px 5px 5px 3px black;
+}
+.image:hover {
+  width: 750px;
+  height: 900px;
+  transition: 600ms;
+  box-shadow: 6px 6px 6px 4px black;
+}
+h2 {
+  text-shadow: 2px 2px 8px white;
+}
+p {
+  text-shadow: 2px 2px 8px white;
+}
+.skill {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(blue 30%, rgb(230,90,186));
+}
+.heading {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h1 {
+  color: white;
+  text-shadow: 2px 2px 8px white;
+}
+.middle {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fmiddle {
+  width: 40%;
+  height: 100%;
+}
+.smiddle {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius:10% ;
+  border-bottom-right-radius: 10%;
+  border: 3px solid rgb(115,97,212);
+}
+.smiddle > img {
+  border-top-left-radius: 9%;
+  border-bottom-right-radius: 9%;
+}
+.items {
+  display: flex;
+  justify-content: space-around;
+}
+.items > img {
+  border-radius:10%;
+  box-shadow: 1px 1px 5px black;
+}
+.project {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(230,90,186) 30% , orange);
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: lightblue;
+  text-shadow: 2px 2px 8px blueviolet;
+}
+.product {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr );
+}
+.product > div {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.contacs {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(orange 40%, yellow);
+}
+.pro1 > img{
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  width: 50%;
+  height:80%;
+}
+.pro2 > p {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.pro3 > p {
+  font-size: 50px;
+}
+.pro4 > img {
+  width: 60%;
+  height: 80%;
+  border-radius: 10%;
+}
+.pro5 > img {
+  width: 50%;
+  height: 80%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius:10% ;
+}
+.pro6 > p {
+  font-size: 50px;
+}
+.contacs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacs > div {
+}
+.cont {
+  width: 40%;
+  height: 70%;
+}
+.cont2 {
+  width: 40%;
+  height: 70%;
+}
+.Heading {
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.input {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input1 {
+  width: 100%;
+  border-radius: 5%;
+  height: 50px;
+}
+.email {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.email1 {
+  width: 90%;
+  height: 70%;
+  border-radius: 5%;
+}
+.subjects {
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+.sub {
+  height: 70%;
+  width: 40%;
+  border-radius: 5%;
+}
+.message {
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mess {
+  height: 100%;
+  width: 70%;
+  border-radius: 5%;
+}
+.mess::placeholder {
+  align-self: flex-start;
+}
+.submit {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit button {
+  width: 20%;
+  height: 30%;
+  border-radius: 8%;
+  box-shadow: 0px 0px 1px 1px black;
+  background-color: #F37A7A;
+}
+.get {
+  display: flex;
+  align-items: flex-end;
+  height: 20%;
+}
+.para {
+  height: 16%;
+  display: flex;
+  justify-content: center;
+}
+.para > p {
+  font-size: 30px;
+}
+.add {
+  display: flex;
+  height: 64%;
+}
+.add1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add1 > p {
+  font-size: 30px;
+}
+.add2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.add2 > p {
+  font-size: 30px;
+}
+.end {
+  width: 100%;
+  height: 30%;
+  background-color:blue ;
+  display: flex;
+  justify-content: space-around;
+
+}
+.links {
+  width:40%;
+  height: 100%;
+  display: flex;
+  justify-content:space-around ;
+}
+.cont-inf {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont-inf1 {
+  width: 30%;
+  height: 50%;
+}
+.cont-inf1 > p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.cont-inf2 {
+  width: 40%;
+  height: 50%;
+}
+.cont-inf2 > p {
+  font-size: 25px;
+}
+.p1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.p2 {
+  display: flex;
+  align-items: center;
+}
+img:hover {
+  height: 85%;
+  transition: 500ms;
+  width: 62%;
+}
