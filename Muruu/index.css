@@ -157,6 +157,11 @@ h3 {
   width: 50%;
   height:80%;
 }
+.pro1 > img:hover {
+  width: 53%;
+  height: 83%;
+  transition: 600ms;
+}
 .pro2 > p {
   display: flex;
   justify-content: center;
@@ -166,15 +171,25 @@ h3 {
   font-size: 50px;
 }
 .pro4 > img {
-  width: 60%;
-  height: 80%;
+  width: 55%;
+  height: 75%;
   border-radius: 10%;
+}
+.pro4 > img:hover {
+  width: 65%;
+  height: 85%;
+  transition: 600ms;
 }
 .pro5 > img {
   width: 50%;
   height: 80%;
   border-top-right-radius: 10%;
   border-bottom-left-radius:10% ;
+}
+.pro5 > img:hover {
+  width: 60%;
+  height: 90%;
+  transition: 600ms;
 }
 .pro6 > p {
   font-size: 50px;
@@ -185,8 +200,6 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.contacs > div {
 }
 .cont {
   width: 40%;
@@ -343,9 +356,4 @@ h3 {
 .p2 {
   display: flex;
   align-items: center;
-}
-img:hover {
-  height: 85%;
-  transition: 500ms;
-  width: 62%;
 }
