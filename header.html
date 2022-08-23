@@ -5,28 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
-</head>
-<body>
-    <div class="header">
-    <nav>
-        <img src="data:image/png;base64,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"
-        class="logo" width="150px" height="150px">
-        <ul class="nav-links">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Muruudul</a></li>
-            <li><a href="#">Batnomin</a></li>
-            <li><a href="#">Ulmiibat</a></li>
-            <li><a href="#">Khash-Erdene</a></li>
-            <li><a href="#">Khulugjin</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <h1>Манай багийн танилцуулга сайтад тавтай морил</h1>
-        <form>
-            <button>Бидэнтэй хамтрах</button>
-        </form>
+    <link rel="stylesheet" href="./header.css" />
+  </head>
+  <body>
+    <div class="who">
+      <div class="say">
+        Хэн юу гэж хэлэв?
+      </div>
+      <div class="comm">Гишүүдийн сэтгэгдэл</div>
+      <div class="muruu">
+        “Багаар ажиллаж, нэг том веб хийсэн нь миний хувьд маш гайхалтай
+        туршлага боллоо.”
+      </div>
+      <div class="ulmii">
+        “Багаар ажиллаж, нэг том веб хийсэн нь миний хувьд маш гайхалтай
+        туршлага боллоо.”
+      </div>
+      <div class="huji">
+        “Багаар ажиллаж, нэг том веб хийсэн нь миний хувьд маш гайхалтай
+        туршлага боллоо.”
+      </div>
+      <div class="hasha">
+        “Багаар ажиллаж, нэг том веб хийсэн нь миний хувьд маш гайхалтай
+        туршлага боллоо.”
+      </div>
+      <div class="pa">
+        <div>Багийн ахлагч:Muruudul</div>
+        <div>Багийн гишүүн:Ulmiibat</div>
+      </div>
+      <div class="pa1">
+        <div>Багийн гишүүн:Khash-Erdene</div>
+        <div>Багийн гишүүн:Hulugjin</div>
+      </div>
+      <div class="img"><img src="Mugshot.png" /></div>
+      <div class="img1"><img src="Mugshot (1).png" /></div>
+      <div class="img2"><img src="Group 17.png" /></div>
+      <div class="img3"><img src="Group 18.png" /></div>
     </div>
-</div>
-</body>
+    <div class="footer">
+      <div class="para">
+        <span>facebook</span>
+        <span>Github</span>
+        <span>Twitter</span>
+        <span>Google+</span>
+        <span>Linkdln</span>
+        <span>Behance</span>
+        <span>Dribbble</span>
+      </div>
+    </div>
+  </body>
 </html>
