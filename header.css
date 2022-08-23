@@ -3,44 +3,124 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: purple;
+.who {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d74680;
+  display: grid;
+  grid-template-rows: 2fr 1fr  1fr 4fr 1fr 4fr ;
+  grid-template-columns: 1fr 4fr 1fr 4fr;
+  grid-template-areas:
+    "say say say say"
+    "comm comm comm comm"
+    "pa1 pa1 pa1 pa1"
+    "img muruu img1 ulmii"
+    "pa pa pa pa"
+    "img2 huji img3 hasha"
+    ;
+}
+.say {
+  grid-area: say;
+  color: white;
+  font-size: 50px;
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 5px;
 }
 .comm {
   grid-area: comm;
   color: white;
   font-size: 20px;
-  position: relative;
-}
-nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-links li {
-  display: inline-block;
-  margin: 0 15px;
-}
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-}
-.content {
-  position: absolute;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+.muruu {
+  grid-area: muruu;
   color: white;
+  font-style: oblique;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
 }
-.content h1 {
-  font-size: 60px;
-  margin-bottom: 40px;
+.ulmii {
+  grid-area: ulmii;
+  color: white;
+  font-style: oblique;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
 }
-.content form button {
-  background: orange;
-  padding: 15px 40px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.huji {
+  grid-area: huji;
+  color: white;
+  font-style: oblique;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
+}
+.hasha {
+  grid-area: hasha;
+  color: white;
+  font-style: oblique;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
+}
+.pa {
+  grid-area: pa;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  font-size: 30px;
+  color: #FFDD99;
+}
+.pa1 {
+  grid-area: pa1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  color: #FFDD99;
+}
+.img {
+  grid-area: img;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.img1 {
+  grid-area: img1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.img2 {
+  grid-area: img2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.img3 {
+  grid-area: img3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.footer {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  background-color: #344b8e;
+}
+.para {
+  width: 70vw;
+  height: 10vh;
+  font-size: 25px;
+  background-color: #344b8e;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
