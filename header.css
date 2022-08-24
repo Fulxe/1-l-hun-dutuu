@@ -3,12 +3,58 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightsalmon;
+}
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+.content {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.content h1 {
+  color: aliceblue;
+}
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+.content form button {
+  background: orange;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 .who {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-color: #d74680;
   display: grid;
-  grid-template-rows: 2fr 1fr  1fr 4fr 1fr 4fr ;
+  grid-template-rows: 2fr 1fr 1fr 4fr 1fr 4fr;
   grid-template-columns: 1fr 4fr 1fr 4fr;
   grid-template-areas:
     "say say say say"
@@ -16,8 +62,12 @@
     "pa1 pa1 pa1 pa1"
     "img muruu img1 ulmii"
     "pa pa pa pa"
-    "img2 huji img3 hasha"
-    ;
+    "img2 huji img3 hasha";
+}
+.m1 {
+ width: 100%;
+ height:100vh;
+ background: linear-gradient(orange 40%, red);
 }
 .say {
   grid-area: say;
@@ -70,10 +120,10 @@
 .pa {
   grid-area: pa;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   font-size: 30px;
-  color: #FFDD99;
+  color: blue;
 }
 .pa1 {
   grid-area: pa1;
@@ -81,7 +131,7 @@
   justify-content: space-around;
   align-items: center;
   font-size: 30px;
-  color: #FFDD99;
+  color: blue;
 }
 .img {
   grid-area: img;
@@ -123,4 +173,162 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.chest {
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(lightsalmon 30% , purple);
+}
+.chest1 {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.chest1 > p {
+  font-size: 60px;
+}
+.chest2 {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "fr1 fr2"
+    "fr3 fr4";
+}
+.chest2 > div {
+  display: flex;
+  justify-content: center;
+}
+.chest2 > div > img {
+  width: 50%;
+  height: 50%;
+  border-radius: 10%;
+}
+.fr1 {
+  grid-area: fr1;
+}
+.fr2 {
+  grid-area: fr2;
+}
+.fr3 {
+  grid-area: fr3;
+}
+.fr4 {
+  grid-area: fr4;
+}
+.a {
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(purple 30%, orange);
+  display: flex;
+ flex-direction: column;
+}
+.up {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+.up1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.ins {
+  width: 50%;
+  height: 54%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fir {
+  width: 100%;
+  height: 63%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  flex-direction: column;
+}
+.first {
+  width: 30%;
+  height: 5%;
+  background-color: white;
+  align-items: flex-end;
+}
+.bottom {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.b1 {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.r1 {
+  height: 95%;
+  width: 25%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.r2 {
+  height: 95%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.r3 {
+  height: 95%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.r4 {
+  height: 95%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bl {
+  width: 100%;
+  height: 10%;
+}
+.wr {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  color: gray;
+  flex-direction: column;
+}
+span {
+  color: white;
+}
+h1 {
+  color: black;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
