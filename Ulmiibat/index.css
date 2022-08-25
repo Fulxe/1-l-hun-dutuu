@@ -1,5 +1,8 @@
 body {
   background: linear-gradient(white 1%, white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container {
   width: 100%;
@@ -123,7 +126,7 @@ body {
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-color: aliceblue;
 }
 .dark-mode {
