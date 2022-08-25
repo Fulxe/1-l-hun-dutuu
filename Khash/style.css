@@ -22,10 +22,10 @@
 .container1 {
   font: 100px;
 }
-span{
+span {
   color: gray;
 }
-.skills{
+.skills {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -34,12 +34,107 @@ span{
   justify-content: center;
   align-items: center;
 }
-.skills1{
+.skills1 {
   font: 100px;
   align-items: center;
   justify-content: center;
 }
-.img{
+.img {
   align-self: flex-start;
-
+}
+.logos {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 3px 8px 7px rgba(44, 15, 15, 0.71);
+}
+.project {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.product {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.product > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pro1 > img {
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  width: 40%;
+  height: 80%;
+}
+.pro2 > p {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.pro3 > p {
+  font-size: 50px;
+}
+.pro4 > img {
+  width: 60%;
+  height: 80%;
+  border-radius: 10%;
+}
+.pro5 > img {
+  width: 50%;
+  height: 80%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+.pro6 > p {
+  font-size: 50px;
+}
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.email {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.email1 {
+  width: 250px;
+  height: 30px;
+  border-radius: 5%;
+}
+.message {
+  display: flex;
+  align-items: center;
+}
+.mess{
+  width: 250px;
+  height: 30px;
+  border-radius: 5%;
+}
+.submit {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit button {
+  width: 20%;
+  height: 30%;
+  border-radius: 8%;
+  box-shadow: 0px 0px 1px 1px black;
+  background-color: bisque;
 }
