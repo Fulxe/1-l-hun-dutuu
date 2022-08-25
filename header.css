@@ -21,23 +21,71 @@ nav {
   justify-content: space-between;
   background-color: lightsalmon;
 }
+nav img{
+  border-radius: 50%;
+}
 .nav-links li {
   display: inline-block;
   margin: 0 15px;
+  padding: 10px 0;
 }
 .nav-links li a {
   text-decoration: none;
   color: white;
 }
-.content {
+
+.nav-links {
+  list-style: none;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a i {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.active {
+  background: #000000;
+  width: 100%;
+  height: 47px;
   position: absolute;
+  left: 0;
+  top: 2.6%;
+  z-index: -1;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+  display: none;
+  transition: top 0.5s;
+}
+
+.nav-links li:hover a {
+  color: aqua;
+  transition: 0.6s;
+  font-size: 35px;
+}
+
+.nav-links li:hover~.active {
+  display: block;
+ 
+}
+.content {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  flex-direction: column;
 }
 .content h1 {
-  color: aliceblue;
+  color: aqua;
 }
 .content h1 {
   font-size: 60px;
@@ -81,7 +129,7 @@ nav {
 .comm {
   grid-area: comm;
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
 }
@@ -89,7 +137,7 @@ nav {
   grid-area: muruu;
   color: white;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 30px;
   width: 400px;
   height: 100px;
 }
@@ -97,7 +145,7 @@ nav {
   grid-area: ulmii;
   color: white;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 30px;
   width: 400px;
   height: 100px;
 }
@@ -105,7 +153,7 @@ nav {
   grid-area: huji;
   color: white;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 30px;
   width: 400px;
   height: 100px;
 }
@@ -113,7 +161,7 @@ nav {
   grid-area: hasha;
   color: white;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 30px;
   width: 400px;
   height: 100px;
 }
@@ -188,6 +236,7 @@ nav {
 }
 .chest1 > p {
   font-size: 60px;
+  text-shadow: 2px 2px 3px white;
 }
 .chest2 {
   width: 100%;
@@ -248,13 +297,16 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.ins p {
+  font-size: 22px;
+}
 .fir {
   width: 100%;
   height: 63%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 34px;
+  font-size: 50px;
   flex-direction: column;
 }
 .first {
@@ -281,9 +333,11 @@ nav {
   height: 95%;
   width: 25%;
   display: flex;
-
   align-items: center;
   flex-direction: column;
+}
+.r1 img {
+  border-radius: 10%;
 }
 .r2 {
   height: 95%;
@@ -292,7 +346,9 @@ nav {
   align-items: center;
   flex-direction: column;
 }
-
+.r2 img {
+  border-radius: 10%;
+}
 .r3 {
   height: 95%;
   width: 25%;
@@ -300,13 +356,18 @@ nav {
   align-items: center;
   flex-direction: column;
 }
-
+.r3 img {
+  border-radius: 10%;
+}
 .r4 {
   height: 95%;
   width: 25%;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.r4 img {
+  border-radius: 10%;
 }
 .bl {
   width: 100%;
@@ -317,7 +378,9 @@ nav {
   height: 35%;
   display: flex;
   align-items: center;
-  color: gray;
+  color: black;
+  font-size: 20px;
+  text-shadow: 0px 0px 2px 4px whiter;
   flex-direction: column;
 }
 span {
