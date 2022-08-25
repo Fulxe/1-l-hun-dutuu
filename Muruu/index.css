@@ -154,8 +154,13 @@ h3 {
   display: flex;
   justify-content: center;
   border-radius: 10%;
-  width: 40%;
+  width: 50%;
   height:80%;
+}
+.pro1 > img:hover {
+  width: 53%;
+  height: 83%;
+  transition: 600ms;
 }
 .pro2 > p {
   display: flex;
@@ -166,15 +171,25 @@ h3 {
   font-size: 50px;
 }
 .pro4 > img {
-  width: 60%;
-  height: 80%;
+  width: 55%;
+  height: 75%;
   border-radius: 10%;
+}
+.pro4 > img:hover {
+  width: 65%;
+  height: 85%;
+  transition: 600ms;
 }
 .pro5 > img {
   width: 50%;
   height: 80%;
   border-top-right-radius: 10%;
   border-bottom-left-radius:10% ;
+}
+.pro5 > img:hover {
+  width: 60%;
+  height: 90%;
+  transition: 600ms;
 }
 .pro6 > p {
   font-size: 50px;
@@ -185,8 +200,6 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.contacs > div {
 }
 .cont {
   width: 40%;
@@ -206,10 +219,10 @@ h3 {
   height: 10%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .input1 {
-  width: 200%;
+  width: 100%;
   border-radius: 5%;
   height: 50px;
 }
@@ -298,4 +311,49 @@ h3 {
 }
 .add2 > p {
   font-size: 30px;
+}
+.end {
+  width: 100%;
+  height: 30%;
+  background-color:blue ;
+  display: flex;
+  justify-content: space-around;
+
+}
+.links {
+  width:40%;
+  height: 100%;
+  display: flex;
+  justify-content:space-around ;
+}
+.cont-inf {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont-inf1 {
+  width: 30%;
+  height: 50%;
+}
+.cont-inf1 > p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.cont-inf2 {
+  width: 40%;
+  height: 50%;
+}
+.cont-inf2 > p {
+  font-size: 25px;
+}
+.p1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.p2 {
+  display: flex;
+  align-items: center;
 }
